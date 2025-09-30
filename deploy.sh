@@ -1,3 +1,4 @@
+[200~#!/usr/bin/env python3
 import os, requests
 
 API_KEY = os.getenv("MISTRAL_API_KEY")
@@ -23,4 +24,6 @@ while True:
 									        print(f"Mistral: {reply}\n")
 										        history.append({"role": "assistant", "content": reply})
 											    except Exception as e:
-				                             					print(f" Error: {e}")
+											            print(f" Error: {e}")
+
+
